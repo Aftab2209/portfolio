@@ -17,7 +17,7 @@ export function LampDemo() {
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
         Hi, I’m Aftab
-        <div className="text-xl w-[100%] mt-2 flex items-center justify-center md:text-lg">
+        <div className="text-xl md:text-2xl lg:text-xl w-[100%] mt-2 flex items-center justify-center">
           <p className="w-[80%] text-wrap text-center">
             a full-stack developer passionate about creating end-to-end web
             solutions. With expertise across Angular, React, Node.js, and
@@ -98,7 +98,7 @@ export const LampContainer = ({ children, className }) => {
 
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
-      <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
+      <div className="relative z-50 flex  lg:-translate-y-80 -translate-y-100  flex-col items-center px-5">
         {children}
       </div>
     </div>
