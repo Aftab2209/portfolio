@@ -17,10 +17,14 @@ export function LampDemo() {
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
         Hi, I’m Aftab
-        
-        <div className="text-xl w-[100%] flex items-center justify-center">
-            <p className="w-[50%]" >a full-stack developer passionate about creating end-to-end web solutions. With expertise across Angular, React, Node.js, and Next.js, I build seamless user experiences and scalable backends. Take a look at my work and see how I bring ideas to life through code.
-            </p>
+        <div className="text-xl w-[100%] mt-2 flex items-center justify-center md:text-lg">
+          <p className="w-[80%] text-wrap text-center">
+            a full-stack developer passionate about creating end-to-end web
+            solutions. With expertise across Angular, React, Node.js, and
+            Next.js, I build seamless user experiences and scalable backends.
+            Take a look at my work and see how I bring ideas to life through
+            code.
+          </p>
         </div>
       </motion.h1>
     </LampContainer>
