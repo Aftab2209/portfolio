@@ -69,8 +69,8 @@ export function TimelineDemo() {
     {
       title: "June 2024",
       content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
+        <div className="flex flex-col gap-2">
+          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-2">
             My team and I won first place in ITC Infotech’s Boost Quest
             hackathon, where we created an intuitive UI for rapid dashboard
             creation. This solution allows users to generate dashboards in 60
@@ -78,6 +78,19 @@ export function TimelineDemo() {
             data structure. We received the award from ITC Infotech CEO Sudip
             Singh.
           </p>
+
+          <div className="flex gap-2 mb-2 flex-wrap">
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              AI SDK by Vercel
+            </button>
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Next JS
+            </button>
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Open AI
+            </button>
+          </div>
+
 
           <div className="grid grid-cols-2 gap-4">
             <Image
