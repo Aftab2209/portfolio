@@ -8,6 +8,10 @@ export function TimelineDemo() {
       title: "October 2024",
       content: (
         <div className="flex flex-col gap-2">
+          <h2 className="text-xl md:text-3xl mb-4 text-black dark:text-white max-w-4xl">
+            ITC Infotech and BAT Hackathon: 2nd Runner-Up
+          </h2>
+
           <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-2">
             Our team placed second runner-up in the ITC Infotech and BAT joint
             hackathon! We built a microservice for route optimization, boosting
@@ -70,6 +74,10 @@ export function TimelineDemo() {
       title: "June 2024",
       content: (
         <div className="flex flex-col gap-2">
+          <h2 className="text-xl md:text-3xl mb-4 text-black dark:text-white max-w-4xl">
+            Boost Quest Hackathon Winner, ITC Infotech
+          </h2>
+
           <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-2">
             My team and I won first place in ITC Infotech’s Boost Quest
             hackathon, where we created an intuitive UI for rapid dashboard
@@ -90,7 +98,6 @@ export function TimelineDemo() {
               Open AI
             </button>
           </div>
-
 
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -121,8 +128,12 @@ export function TimelineDemo() {
     {
       title: "Feb 2024",
       content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg  font-normal mb-4">
+        <div className="flex flex-col gap-2">
+          <h2 className="text-xl md:text-3xl mb-4 text-black dark:text-white max-w-4xl">
+            Top Performer Award
+          </h2>
+
+          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg  font-normal mb-2">
             Awarded by ITC Infotech, this certificate recognizes my exceptional
             performance and contribution to the BOOST program. My efforts in
             supporting the program's initiatives led to measurable impacts, and
@@ -132,6 +143,13 @@ export function TimelineDemo() {
             excellence and my ability to drive successful outcomes in
             collaborative projects.
           </p>
+
+          <div className="flex gap-2 mb-2 flex-wrap">
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Top Performer ✨
+            </button>
+          </div>
+
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/top.jpg"
@@ -145,9 +163,14 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Aug 2023",
+      title: "August 2023",
       content: (
         <div>
+          <h2 className="text-xl md:text-3xl mb-4 text-black dark:text-white max-w-4xl">
+            Embarking on a Journey: Joined ITC Infotech as Associate IT
+            Consultant{" "}
+          </h2>
+
           <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg  font-normal mb-4">
             Joined ITC Infotech as an Associate IT Consultant, where I work on
             diverse projects leveraging various technology stacks including
@@ -161,6 +184,61 @@ export function TimelineDemo() {
             contribute to high-impact projects and strengthen my technical and
             consulting skills within a dynamic environment.
           </p>
+        </div>
+      ),
+    },
+    {
+      title: "August 2022",
+      content: (
+        <div className="flex flex-col gap-2">
+          <h2 className="text-xl md:text-3xl mb-4 text-black dark:text-white max-w-4xl">
+            Smart India Hackathon 2022 Finalist, IIT Guwahati
+          </h2>
+
+          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-2">
+            Developed an e-commerce solution to promote regional Indian
+            traditional art forms and business practices, connecting artisans
+            with a global market. The website was recognized as a finalist in
+            the Smart India Hackathon 2022, held at IIT Guwahati, where it was
+            showcased as an innovative solution addressing real-world challenges
+            in cultural preservation and market accessibility.
+          </p>
+
+          <div className="flex gap-2 mb-2 flex-wrap">
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Angular
+            </button>
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Innovation
+            </button>
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              SIH
+            </button>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/sih-1.jpg"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/sih-2.jpg"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            {/* <Image
+              src="/june-1.jpg"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            /> */}
+          </div>
         </div>
       ),
     },
