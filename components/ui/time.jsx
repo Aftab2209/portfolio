@@ -35,7 +35,7 @@ export function TimelineDemo() {
 
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/hack-com.JPG"
+              src="/hack-com.jpg"
               alt="startup template"
               width={500}
               height={500}
