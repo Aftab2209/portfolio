@@ -17,7 +17,7 @@ export function SpotlightPreview() {
           a full-stack developer passionate about creating end-to-end web
           solutions. With expertise across Angular, React, Node.js, and Next.js,
           I build seamless user experiences and scalable backends. Take a look
-          at my work and see how I bring ideas to life through code.
+          at my work and see how I bring ideas to life through code.   
         </p>
         <ScrollDown />
       </div>
