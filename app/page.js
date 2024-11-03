@@ -3,10 +3,12 @@ import React from "react";
 import { TimelineDemo } from "@/components/ui/time";
 import { LampContainer, LampDemo } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
+import { SpotlightPreview } from "@/components/ui/spot";
 export default function Home() {
   return (
     <>
-     <LampDemo/>
+     {/* <LampDemo/> */}
+     <SpotlightPreview/>
       <TimelineDemo />
     </>
   );
