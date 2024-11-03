@@ -1,5 +1,5 @@
 import React from "react";
-import { Spotlight } from "../ui/spotlight";
+import { Spotlight } from "../ui/Spotlight";
 import ScrollDown from "./ScrollDown";
 
 export function SpotlightPreview() {
