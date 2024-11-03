@@ -13,6 +13,7 @@ module.exports = {
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
         spotlight: {
@@ -24,6 +25,10 @@ module.exports = {
             opacity: 1,
             transform: "translate(-50%,-40%) scale(1)",
           },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '0 0' },
+          '100%': { backgroundPosition: '-200% 0' },
         },
       },
     },
