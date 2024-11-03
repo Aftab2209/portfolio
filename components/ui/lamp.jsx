@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import ScrollDown from "./ScrollDown";
 
 export function LampDemo() {
   return (
@@ -27,6 +28,7 @@ export function LampDemo() {
           </p>
         </div>
       </motion.h1>
+      <ScrollDown />
     </LampContainer>
   );
 }
@@ -42,7 +44,7 @@ export const LampContainer = ({ children, className }) => {
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
-          whileInView={{ width:  '33%' }} 
+          whileInView={{ width: "33%" }}
           transition={{
             delay: 0.3,
             duration: 0.8,
@@ -58,7 +60,7 @@ export const LampContainer = ({ children, className }) => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
-          whileInView={{ opacity: 1, width:  "33%" }}
+          whileInView={{ opacity: 1, width: "33%" }}
           transition={{
             delay: 0.3,
             duration: 0.8,
@@ -77,7 +79,7 @@ export const LampContainer = ({ children, className }) => {
         <div className="absolute inset-auto z-50 h-36 w-[33%] -translate-y-1/2 rounded-full bg-cyan-500 opacity-50 blur-3xl"></div>
         <motion.div
           initial={{ width: "8rem" }}
-          whileInView={{ width: '25%'}}
+          whileInView={{ width: "25%" }}
           transition={{
             delay: 0.3,
             duration: 0.8,
@@ -87,7 +89,7 @@ export const LampContainer = ({ children, className }) => {
         ></motion.div>
         <motion.div
           initial={{ width: "15rem" }}
-          whileInView={{ width:  "33%" }}
+          whileInView={{ width: "33%" }}
           transition={{
             delay: 0.3,
             duration: 0.8,
@@ -98,7 +100,7 @@ export const LampContainer = ({ children, className }) => {
 
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
-      <div className="relative z-50 flex  lg:-translate-y-80 -translate-y-40  flex-col items-center px-5">
+      <div className="relative z-50 flex  lg:-translate-y-80 -translate-y-80  flex-col items-center px-5">
         {children}
       </div>
     </div>
