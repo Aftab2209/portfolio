@@ -7,14 +7,32 @@ export function TimelineDemo() {
     {
       title: "October 2024",
       content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
+        <div className="flex flex-col gap-2">
+          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-2">
             Our team placed second runner-up in the ITC Infotech and BAT joint
             hackathon! We built a microservice for route optimization, boosting
             efficiency for BAT field reps who manage daily travel for sales,
             pickups, and more. It was an inspiring collaboration and a rewarding
             learning experience!
           </p>
+          <div className="flex gap-2 mb-2">
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Google Maps API
+            </button>
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Route Optimisation
+            </button>
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Angular
+            </button>
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Express Js
+            </button>
+            <button className="rounded-2xl inline-flex h-8 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400">
+              Node Js
+            </button>
+          </div>
+
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/hack-4.JPG"
@@ -128,7 +146,7 @@ export function TimelineDemo() {
             applications, optimizing performance, and ensuring seamless
             integration across platforms. This position has enabled me to
             contribute to high-impact projects and strengthen my technical and
-            consulting skills within a dynamic environment.F
+            consulting skills within a dynamic environment.
           </p>
         </div>
       ),
