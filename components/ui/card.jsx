@@ -4,7 +4,7 @@ import { PinContainer } from "../ui/3d-pin";
 
 export function AnimatedPinDemo() {
   return (
-    (<div className="flex items-center justify-center ">
+    (<div className="flex items-center justify-center mb-10">
       <PinContainer title="/aftabalam.in" href="">
         <div
           className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
