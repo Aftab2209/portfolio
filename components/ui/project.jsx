@@ -2,6 +2,8 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatedPinDemo } from "./card";
+import { ExpandableCardDemo } from "@/components/ui/expandcard";
+
 export const Project = ({ data }) => {
   const ref = useRef(null);
   const containerRef = useRef(null);
@@ -30,9 +32,8 @@ export const Project = ({ data }) => {
         </p>
       </div>
       <div className="md:px-[8%] w-full gap-4 flex flex-wrap mb-10">
-        <AnimatedPinDemo />
-        <AnimatedPinDemo />
-        <AnimatedPinDemo />
+        <ExpandableCardDemo />
+  
       </div>
     </div>
   );
