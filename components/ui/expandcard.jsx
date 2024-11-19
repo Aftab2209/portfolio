@@ -63,7 +63,7 @@ export function ExpandableCardDemo() {
           <motion.div
             layoutId={`card-${active.title}-${id}`}
             ref={ref}
-            className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden">
+            className="w-full max-w-[700px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden">
             <motion.div layoutId={`image-${active.title}-${id}`}>
               <Image
                 priority
@@ -122,7 +122,7 @@ export function ExpandableCardDemo() {
           onClick={() => setActive(card)}
           className="p-4 w-[100%] flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
           <div className="flex gap-4 flex-col md:flex-row w-[90%] items-center justify-center">
-            <motion.div layoutId={`image-${card.title}-${id}`}>
+            <motion.div layoutId={`image-${card.title}-${id}` } className="md:w-1/3 w-full">
               <Image
                 width={100}
                 height={100}
@@ -195,11 +195,29 @@ const cards = [
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        (<p>A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
+        (<p>Aa simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
+          A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
+          A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
                   </p>)
       );
     },
   },
+  {
+    description: "A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.",
+    title: "An NPM package - react-browser-api",
+    src: "/npm.png",
+    ctaText: "Know more!",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        (<p>Aa simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
+          A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
+          A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
+                  </p>)
+      );
+    },
+  },
+  
 
 
 ];
