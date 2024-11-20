@@ -188,6 +188,7 @@ export const CloseIcon = () => {
 
 const cards = [
   {
+    id: "1",
     description: "A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.",
     title: "An NPM package - react-browser-api",
     src: "/npm.png",
@@ -195,29 +196,42 @@ const cards = [
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        (<p>Aa simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
-          A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
-          A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
-                  </p>)
+        (<p>
+
+The react-browser-api library streamlines integrating complex browser functionalities with React's declarative components, saving development time and improving maintainability. Whether you're building modern applications with dynamic user data or need to handle advanced storage management seamlessly, this package provides a robust solution. It is lightweight, well-documented, and designed to scale with the needs of small to large projects alike.
+          </p>)
       );
     },
   },
   {
-    description: "A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.",
-    title: "An NPM package - react-browser-api",
+    id: "2",
+    description: "As part of ITC's data migration project for BAT, I developed a code converter tool to streamline the transition from Snowflake to Microsoft Fabric. This tool automatically converts Snowflake SQL code into Spark SQL, simplifying a complex migration process that typically requires significant manual effort.",
+    title: "Code Converter",
     src: "/npm.png",
     ctaText: "Know more!",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        (<p>Aa simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
-          A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
-          A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.
+        (<p>The tool was designed to handle the nuances and syntax differences between Snowflake and Spark SQL, ensuring that existing queries and scripts would work seamlessly in the new environment. By reducing the need for manual rewriting of SQL code, it saved valuable time and minimized the risk of errors, making the migration process smoother and more efficient.
+<br></br>
                   </p>)
       );
     },
   },
   
-
+  {
+    id: "3",
+    description: "I developed a Power BI Designer Tool that revolutionizes the way users design and customize Power BI reports. This tool leverages reverse engineering techniques to automatically generate templates. Users can then simply connect their own data sources, eliminating the need to start from scratch.",
+    title: "Power BI Designer",
+    src: "/npm.png",
+    ctaText: "Know more!",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        (<p>The tool offers features like color theming and a variety of pre-made templates, allowing users to quickly apply consistent branding and visual designs to their reports. This approach not only saves time but also enhances the design process, enabling users to create polished and professional reports with minimal effort.
+                  </p>)
+      );
+    },
+  },
 
 ];
