@@ -74,7 +74,7 @@ export function ExpandableCardDemo() {
                 className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top" />
             </motion.div>
 
-            <div>
+            <div className="overflow-y-scroll scrollbar-hide">
               <div className="flex justify-between items-start p-4">
                 <div className="">
                   <motion.h3
@@ -84,7 +84,7 @@ export function ExpandableCardDemo() {
                   </motion.h3>
                   <motion.p
                     layoutId={`description-${active.description}-${id}`}
-                    className="text-neutral-600 dark:text-neutral-400">
+                    className="text-neutral-600 dark:text-neutral-400 ">
                     {active.description}
                   </motion.p>
                 </div>
@@ -103,7 +103,7 @@ export function ExpandableCardDemo() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
+                  className="text-neutral-600 md:text-sm lg:text-base md:h-fit pb-10 flex flex-col items-start gap-4  dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
                   {typeof active.content === "function"
                     ? active.content()
                     : active.content}
@@ -193,7 +193,7 @@ const cards = [
     title: "An NPM package - react-browser-api",
     src: "/npm.png",
     ctaText: "Know more!",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.npmjs.com/package/react-browser-api",
     content: () => {
       return (
         (<p>
@@ -209,7 +209,7 @@ The react-browser-api library streamlines integrating complex browser functional
     title: "Code Converter",
     src: "/npm.png",
     ctaText: "Know more!",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.npmjs.com/package/react-browser-api",
     content: () => {
       return (
         (<p>The tool was designed to handle the nuances and syntax differences between Snowflake and Spark SQL, ensuring that existing queries and scripts would work seamlessly in the new environment. By reducing the need for manual rewriting of SQL code, it saved valuable time and minimized the risk of errors, making the migration process smoother and more efficient.
@@ -225,7 +225,7 @@ The react-browser-api library streamlines integrating complex browser functional
     title: "Power BI Designer",
     src: "/npm.png",
     ctaText: "Know more!",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.npmjs.com/package/react-browser-api",
     content: () => {
       return (
         (<p>The tool offers features like color theming and a variety of pre-made templates, allowing users to quickly apply consistent branding and visual designs to their reports. This approach not only saves time but also enhances the design process, enabling users to create polished and professional reports with minimal effort.
