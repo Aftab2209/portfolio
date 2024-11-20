@@ -71,7 +71,7 @@ export function ExpandableCardDemo() {
                 height={200}
                 src={active.src}
                 alt={active.title}
-                className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top" />
+                className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover md:object-fit" />
             </motion.div>
 
             <div className="overflow-y-scroll scrollbar-hide">
@@ -191,7 +191,7 @@ const cards = [
     id: "1",
     description: "A simple yet powerful React hooks library for browser APIs like enhanced LocalStorage with auto-expiry and easy set/get methods to track item age, same for Session Storage, Geolocation, and Clipboard. Effortlessly add real-time location tracking, clipboard access, and smart storage to your React apps.",
     title: "An NPM package - react-browser-api",
-    src: "/npm.png",
+    src: "/npmgif.gif",
     ctaText: "Know more!",
     ctaLink: "https://www.npmjs.com/package/react-browser-api",
     content: () => {
