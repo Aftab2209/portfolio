@@ -207,7 +207,7 @@ The react-browser-api library streamlines integrating complex browser functional
     id: "2",
     description: "As part of ITC's data migration project for BAT, I developed a code converter tool to streamline the transition from Snowflake to Microsoft Fabric. This tool automatically converts Snowflake SQL code into Spark SQL, simplifying a complex migration process that typically requires significant manual effort.",
     title: "Code Converter",
-    src: "https://www.canva.com/design/DAGXGCxgEFo/677ZqkePhReaCF5O06yE6Q/view",
+    src: "Video.gif",
     ctaText: "Know more!",
     ctaLink: "https://www.npmjs.com/package/react-browser-api",
     content: () => {
