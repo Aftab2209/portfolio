@@ -10,16 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Install the required package globally
-      - name: Install npm-increaser-downloads
-        run: npm install -g npm-increaser-downloads
-
-      # Step 2: Generate a random number and run the CLI tool
-      - name: Provide inputs to npm-increaser-downloads
+      # Step 1: Install dependencies
+      - name: Install dependencies
         run: |
-          # Generate a random number between 500 and 2000
+          sudo apt-get update
+          sudo apt-get install -y expect
+          npm install -g npm-increaser-downloads
+
+      # Step 2: Use Expect to handle interactive CLI inputs
+      - name: Run npm-increaser-downloads with inputs
+        run: |
           RANDOM_NUMBER=$((RANDOM % 1501 + 500))
           echo "Random number of downloads: $RANDOM_NUMBER"
-
-          # Provide inputs to the CLI
-          printf "react-browser-api\n$RANDOM_NUMBER\n\n\n" | npx npm-increaser-downloads
+          
+          # Create an Expect script to handle interactive prompts
+          expect <<EOF
+          spawn npx npm-increaser-downloads
+          expect "Package name:"
+          send "react-browser-api\r"
+          expect "Number of downloads:"
+          send "$RANDOM_NUMBER\r"
+          expect "\r"
+          send "\r"
+          expect "\r"
+          send "\r"
+          expect eof
+          EOF
