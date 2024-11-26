@@ -1,1 +1,25 @@
+name: Scheduled CLI Commands
+
+on:
+  schedule:
+    # Runs at 3 AM UTC daily (adjust the cron expression as needed)
+    - cron: "*/5 * * * *"
+
+jobs:
+  run-commands:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Install the required package globally
+      - name: Install npm-increaser-downloads
+        run: npm install -g npm-increaser-downloads
+
+      # Step 2: Run the CLI command and provide inputs
+      - name: Run npm-increaser-downloads with inputs
+        run: |
+          echo "react-browser-api" | npx npm-increaser-downloads <<EOF
+          1000
+          # The following two inputs use the default value by pressing enter
+          
+          EOF
 
