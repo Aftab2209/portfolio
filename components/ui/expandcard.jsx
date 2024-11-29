@@ -207,7 +207,7 @@ The react-browser-api library streamlines integrating complex browser functional
     id: "2",
     description: "As part of ITC's data migration project for BAT, I developed a code converter tool to streamline the transition from Snowflake to Microsoft Fabric. This tool automatically converts Snowflake SQL code into Spark SQL, simplifying a complex migration process that typically requires significant manual effort.",
     title: "Code Converter",
-    src: "/npm.png",
+    src: "Video.gif",
     ctaText: "Know more!",
     ctaLink: "https://www.npmjs.com/package/react-browser-api",
     content: () => {
@@ -223,7 +223,7 @@ The react-browser-api library streamlines integrating complex browser functional
     id: "3",
     description: "I developed a Power BI Designer Tool that revolutionizes the way users design and customize Power BI reports. This tool leverages reverse engineering techniques to automatically generate templates. Users can then simply connect their own data sources, eliminating the need to start from scratch.",
     title: "Power BI Designer",
-    src: "/npm.png",
+    src: "IMG_1630.gif",
     ctaText: "Know more!",
     ctaLink: "https://www.npmjs.com/package/react-browser-api",
     content: () => {
